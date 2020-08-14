@@ -1,2 +1,2 @@
-# Message---Morse-Translator
+# Message Morse Translator
 Message to Morse code Translator
