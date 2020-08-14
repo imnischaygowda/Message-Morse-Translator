@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+    </style>
+    <h1><title>Morse Translator</title></h1>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class='login'>
+        <!-- heading for the page -->
+        <h1>Message to Morse Translator</h1>
+    
+    <!-- Main Input For Receiving Query to Translator -->    
+    <form action="{{ url_for('translate')}}"method='post'>
+        <!-- Input message space -->
+        <input type='text' name="Message" placeholder="Message to Translate" reuired="required" />
+
+        <!-- Button to submit -->
+        <button type="submit" class="btn btn-primary btn-block btn-large">Translate</button>
+    </form>
+    <br>
+    <br>
+    <h1>{{Translate_text}}</h1>
+    </div>
+</body>
+</html>
